@@ -3,6 +3,161 @@
     <string name="app_name">Enhanced Drake Equation Calculator</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Enhanced Drake Equation Calculator</string>
+    
+    <string name="about_title">About the Enhanced Drake Equation Calculator</string>
+    
+    <string name="about_text">
+        Welcome to the Enhanced Drake Equation Calculator!
+        Enter your values for each of the steps of the enhanced Drake Equation and 
+        then click on the Submit button at the bottom of the screen.  The results
+        consist of the estimated number of civilizations in the galaxy AND the
+        expected average distance between civilizations.
+    </string>
+    
+    <string name="numstars_question">
+        How many stars are there in the Milky Way galaxy?
+    </string>
+    <string name="numstars_text">
+        The estimates of the number of stars in the Milky Way galaxy range from around 
+        100 billion to over 1 trillion.  A middle-of-the-road consensus estimate is 
+        400 billion.
+        \n\nOne version of the Drake Equation starts with the formation rate of stars.
+        I prefer the version that starts with the total number of existing stars,
+        because the purpose of the Drake Equation is to guess how many civilizations
+        exist right now, not how many will exist 4 billion years from now. 
+    </string>
+    <string name="spectral_question">
+        What fraction of stars are of the appropriate spectral type?
+    </string>
+    <string name="spectral_text">
+        For some reason, most examples of Drake Equation in action do not include this
+        factor in any step of the process.  While you could incorporate this factor into 
+        the average number of habitable planets per star, the fact remains that we know 
+        far more about other stars than we do about exoplanets.
+        \n\nThe sun is a main sequence G2 star.  Lower F-type, all G-type, and upper 
+        K-type main sequence stars can support a civilization.  Only these stars have sufficiently
+        long lifetimes AND a habitable zone.  Such stars are roughly 10% of all stars in the galaxy.
+    </string>
+    <string name="ghz_question">
+        What fraction of the above stars are in the Galactic Habitable Zone?
+    </string>
+    <string name="ghz_text">
+        For some reason, most examples of the Drake Equation in action also ignore this factor.
+        
+        \n\nThe inner region of our galaxy is too dangerous,
+        and its outer region is short on metals.  The metal content is increasing over time, which means
+        that the Galactic Habitable Zone was smaller in the past and will be larger in the future.
+
+		\n\nIt is generally believed that only 5%-10% of the stars in our galaxy are in the Galactic Habitable Zone.
+    </string>
+    <string name="age_question">
+        What fraction of the above stars are old enough to have allowed a
+        civilization to form?
+    </string>
+    <string name="age_text">
+        For some reason, most examples of the Drake Equation in action do not take into account the ages
+        of the stars.  It takes several billion years for a new star to spawn a civilization.  Thus, it is 
+        unlikely that stars significantly younger than our sun have had enough time to give rise to another 
+        civilization.  This criterion eliminates many metal-rich stars, as metallicity
+        in the galaxy was lower billions of years ago.  It is possible that we are part of the first group of 
+        civilizations to form.
+ 	</string>
+    
+    <string name="planets_question">
+        What fraction of suitable stars are orbited by planets?
+    </string>
+    
+    <string name="planets_text">
+		This factor in the Drake Equation is likely to be quite high (near 1).  Astronomers have found
+		numerous exoplanets, and there are likely numerous additional exoplanets that we
+		cannot detect with our current methods.  Remember that the current inventory of known 
+		exoplanets is skewed towards the hot Jupiters simply because they are the most detectable.
+    </string>
+    
+    <string name="habitable_question">
+        What is the average number of habitable planets per star in the above planetary systems?
+    </string>
+    
+    <string name="habitable_text">
+        Most discussions of the Drake Equation are much too optimistic at guessing the number of
+        habitable worlds.
+		\n\n
+        Even given an ideal star, there are still potential flies in the ointment.  For every Earth that
+        exists, there may be several other worlds more like Venus, Mars, or the moon.  We know very little 
+        about what aspects of our solar system are typical and what aspects are anomalous.
+    </string>
+    
+    
+    <string name="life_question">
+        What fraction of habitable planets are inhabited by lifeforms?
+    </string>
+    
+    <string name="life_text">
+        In the 4.6-billion-year history of the Earth, life has been present in all but the first few
+        hundred million years of it .  This suggests using an optimistic number (near 1).  On the other 
+        hand, our sample size is only 1.  Since we exist but have not explored even one other planetary system
+        (much less many of them), we have not seen the failures.  That said, even if you assume that
+        life is inevitable, your figure for this factor of the Drake Equation should be at
+        least slightly lower than 1, as it does take time for life to evolve.
+    </string>
+    
+    <string name="complex_question">
+        Of the planets that have life, what fraction have complex life?
+    </string>
+    
+    <string name="complex_text">
+    	This factor is specific to the Enhanced Drake Equation and is an intermediate step in
+    	the path from simple life to intelligent life.  Complex life is much more fragile than simple life.
+    	An optimist would say that the evolution from simple life to complex life is inevitable given a few 
+    	billion years.  A pessimist would say that this is a low-probability
+    	event even given several billion years.  We cannot draw any firm conclusions with a sample size of 1.
+    	That said, I think that there are numerous worlds with only simple life, which is much hardier than
+    	than complex life.
+    </string>
+    
+    
+    <string name="intelligent_question">
+        Of the planets that have complex life, what fraction 
+        have intelligent life?
+    </string>
+    
+    <string name="intelligent_text">
+        An optimist would point out the trend towards increasingly complex life and the relatively modest time 
+        (1 billion years out of the 4.6-billion-year history of the Earth) that it took for complex life to evolve 
+        into intelligent life.  A pessimist would point out that very few species (humans, dolphins, and whales)
+        are highly intelligent, and only one has managed to implement advanced technology.  A sample size of just
+        one planet makes it impossible to generalize with confidence.
+    </string>
+    
+    <string name="communication_question">
+        Of the planets with intelligent life, on what fraction has this intelligent
+        life developed interstellar communications?
+    </string>
+    
+    <string name="communication_text">
+        An optimist would point out the relatively short time (a few million years out
+        of the 4.6-billion-year history of the Earth) that it took for our species to develop advanced technology
+        for interstellar communication.  A pessimist would suggest possible scenarios in which an intelligent
+        species does not develop this technology, such as beings that live underwater or that lack opposable thumbs
+        (or the equivalent).  Again, a sample size of just one planet makes it impossible to generalize with confidence.
+    </string>
+    
+    <string name="survive_question">
+        What fraction of the above civilizations are still alive and still capable
+        of interstellar communications?
+    </string>
+    
+    <string name="survive_text" formatted="false">
+        I side with the optimists.  Once a civilization has self-sufficient space colonies, it becomes effectively
+        immortal.  Those who assign tiny numbers for this term in the Drake Equation assume that self-destruction 
+        is certain. 
+        \n\nI think that alien sociology could be substantially different from ours, and it is even possible that 
+        most civilizations do survive and thrive, even if ours does not.  Even if the worst case scenarios of global 
+        warming are not averted, a lucky few people could survive, and their descendants could create another advanced 
+        but more sustainable civilization.    
+    </string>
+	<string name="text_button_submit">Submit (Then scroll down for results.)</string>
+    
 
 </resources>

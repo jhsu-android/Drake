@@ -1,14 +1,596 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"	 
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <TextView
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp"
+    >
+ 
+	    <!-- ABOUT THIS APP -->
+    	<Button
+        android:id="@+id/button_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        android:text="About This App" />
+    	
+    	<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />
+    	
+    	<!-- NUMBER OF STARS -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/numstars_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterNumstars"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="number"
+        		android:text="400" 
+        		>
+    			</EditText>
+    			
+    			<TextView
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:text="billion stars" 
+    			/>
+    		</LinearLayout>
+		    	
+    		<Button
+        	android:id="@+id/button_numstars"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="More Details" />
+    		
+		</LinearLayout>
+		
+		<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />
+		
+    	<!-- SPECTRAL TYPE -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/spectral_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterSpectral"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal"
+        		android:text=".1"  
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_spectral"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+		    	
+    		
+		</LinearLayout>
+		
+		<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />
+        
+    	<!-- GALACTIC HABITABLE ZONE -->
+   		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/ghz_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterGhz"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal"
+        		android:text=".09" 
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_ghz"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+		
+		<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />
+    	
+    	<!-- AGE -->
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/age_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterAge"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".4"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_age"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
 
-</RelativeLayout>
+    	<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />
+    	
+    	<!-- PLANETS -->
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/planets_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterPlanets"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".95"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_planets"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+
+    	<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />	
+        
+    	<!-- HABITABLE -->
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/habitable_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterHabitable"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".3"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_habitable"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+		
+        <!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />	
+        
+    	<!-- LIFE -->
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/life_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterLife"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".85"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_life"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+		
+    	<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />
+    	
+    	<!-- COMPLEX -->
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/complex_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterComplex"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".03"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_complex"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+		
+    	<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />	
+    		
+        <!-- INTELLIGENT -->
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/intelligent_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterIntelligent"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".25">
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_intelligent"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+    	
+		<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />	
+        
+    	<!-- COMMUNICATION -->
+        
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/communication_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterCommunication"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".65"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_communication"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+    	
+        <!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />	
+        
+    	<!-- SURVIVE -->
+        
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	>
+    	
+		   	<TextView
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/survive_question" 
+    		/>
+		   	
+		   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="horizontal" 
+    			>
+    			
+    			<EditText
+				android:id="@+id/EnterSurvive"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:inputType="numberDecimal" 
+        		android:text=".75"
+        		>
+    			</EditText>
+    			
+    			<Button
+        		android:id="@+id/button_survive"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="More Details" />
+    			
+    		</LinearLayout>
+    		
+		</LinearLayout>
+		
+    	<!-- Horizontal line -->
+    	<View
+        android:id="@+id/hline1"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray_med" />	
+    	
+		
+    	<!-- This Button section defines the Submit button. -->
+    	<Button
+    	android:id="@+id/button_submit"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/text_button_submit" 
+    	/>
+    
+    	<!-- This TextView section defines the text section that shows the 
+    	result of selecting a cereal and clicking the Submit button.  This is
+    	where the alternative cereal and slogan are displayed.-->
+    	<TextView
+        android:id="@+id/TextResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"
+    	/>	
+    	
+	</LinearLayout>
+</ScrollView>
