@@ -74,7 +74,7 @@ android:layout_height="wrap_content"
 		
 		<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline2"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -124,7 +124,7 @@ android:layout_height="wrap_content"
 		
 		<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline3"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -173,7 +173,7 @@ android:layout_height="wrap_content"
 		
 		<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline4"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -222,7 +222,7 @@ android:layout_height="wrap_content"
 
     	<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline5"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -271,7 +271,7 @@ android:layout_height="wrap_content"
 
     	<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline6"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -320,7 +320,7 @@ android:layout_height="wrap_content"
 		
         <!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline7"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -369,7 +369,7 @@ android:layout_height="wrap_content"
 		
     	<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline8"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -418,7 +418,7 @@ android:layout_height="wrap_content"
 		
     	<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline9"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -466,7 +466,7 @@ android:layout_height="wrap_content"
     	
 		<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline10"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -516,7 +516,7 @@ android:layout_height="wrap_content"
     	
         <!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline11"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -566,7 +566,7 @@ android:layout_height="wrap_content"
 		
     	<!-- Horizontal line -->
     	<View
-        android:id="@+id/hline1"
+        android:id="@+id/hline12"
         android:layout_width="fill_parent"
         android:layout_height="5dip"
         android:layout_marginBottom="2dp"
@@ -581,16 +581,6 @@ android:layout_height="wrap_content"
     	android:layout_height="wrap_content"
     	android:text="@string/text_button_submit" 
     	/>
-    
-    	<!-- This TextView section defines the text section that shows the 
-    	result of selecting a cereal and clicking the Submit button.  This is
-    	where the alternative cereal and slogan are displayed.-->
-    	<TextView
-        android:id="@+id/TextResult"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dip"
-    	/>	
     	
 	</LinearLayout>
 </ScrollView>

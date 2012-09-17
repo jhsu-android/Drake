@@ -473,10 +473,25 @@ public class MainActivity extends Activity {
 
 
 
-		        // Display results
-		        TextView TextView1;   
-		        TextView1 = (TextView) findViewById(R.id.TextResult);
-		    	TextView1.setText(result);
+		        // Open a popup window
+				LayoutInflater SurviveInflater  = (LayoutInflater)getBaseContext().getSystemService(LAYOUT_INFLATER_SERVICE);
+        		View PopupSurvive = SurviveInflater.inflate(R.layout.result_window, null);
+        		final PopupWindow Popup = new PopupWindow(PopupSurvive, LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        		
+        		// Display the results in the popup window
+            	((TextView)Popup.getContentView().findViewById(R.id.TextResult)).setText(result);
+        		
+        		Button ButtonDismiss = (Button)PopupSurvive.findViewById(R.id.button_dismiss);
+        		ButtonDismiss.setOnClickListener(new Button.OnClickListener(){
+
+					//@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						Popup.dismiss();
+					}
+        			
+        		});
+        		Popup.showAsDropDown(ButtonDismiss, 50, 200);
 			}
 			
         	
